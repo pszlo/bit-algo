@@ -2,7 +2,7 @@ t1=[(1,1)];f1=[(0,1)];f1.append(f1[-1]);t1.append(t1[-1]);v40=0;act=1.002;a=0;v3
 v71=0;v70=0;sum12=3000;v50=0;v44=0;v40=0;price14=bitcoin[-a][1];price15=bitcoin[-a][1];price12=bitcoin[-a][1]
 
 import pickle
-#file = open('/Users/andrejeremcuk/bitcoin.pkl', 'rb')
+#file = open('/bitcoin.pkl', 'rb')
 #bitcoin=pickle.load(file)
 
 
