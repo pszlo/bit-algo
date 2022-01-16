@@ -1,0 +1,190 @@
+import math
+ss35=[450];ss71=[450];ss99=[0];t1=[(0,0)];f1=[(0,0)];ss70=[0];pn17=[];tk=0;te=0;pn12=[];
+t1=[(1,1)];f1=[(1,1)];
+t1=[(0,0)];f1=[(1,1)];
+#ss35=[348];ss71=[348];
+#ss35=[7];ss71=[7];
+tt00=[0];tt11=[1];neworder=[]
+
+
+
+def bitcoin5(): 
+    ss35[-1]=ss35[-1]+1;ss71[-1]=ss71[-1]+1;
+    if ((bitcoin777[-1]/(bitcoin777[-1-175])>1.013)or(bitcoin777[-1]/bitcoin777[-1-350]>1.01)or(bitcoin777[-1]/bitcoin777[-1-50]>1.006))and(t1[-1][0]==1)and(ss35[-1]>450):
+     t1.append((0,0));f1.append((1,1));print(bitcoin777[-1],'up',ss35[-1]);ss71[-1]=0;ss35[-1]=0;pn17.append((bitcoin777[-1]));tt00[-1]=7;tt11[-1]=9;
+     if (bitcoin777[-1]/bitcoin777[-1-50]>1.006): pn12.append(1)
+     if (bitcoin777[-1]/bitcoin777[-1-350]>1.01): pn12.append(2)
+    if (((bitcoin777[-1-175])/bitcoin777[-1]>1.013)or(bitcoin777[-1-350]/bitcoin777[-1]>1.01)or(bitcoin777[-1-50]/bitcoin777[-1]>1.006))and(f1[-1][0]==1)and(ss35[-1]>450):
+     t1.append((1,1));f1.append((0,0));print(bitcoin777[-1],'down',ss35[-1]);ss71[-1]=0;ss35[-1]=0;pn17.append((bitcoin777[-1]));tt00[-1]=7;tt11[-1]=9;
+     if (bitcoin777[-1-50]/bitcoin777[-1]>1.006): pn12.append(1)
+     if (bitcoin777[-1-350]/bitcoin777[-1]>1.01): pn12.append(2)
+    if (ss35[-1]==350)and(f1[-1][0]==1)and(ss71[-1]==350):#and((bitcoin777[-1]/min(bitcoin777[-1-50:])<1.003)or(pn17[-1]<bitcoin777[-1]))
+     t1.append((1,1));f1.append((1,1));ss35[-1]=10;ss71[-1]=1351;print(bitcoin777[-1]);pn17.append(bitcoin777[-1]);#closed_cur();
+     tt00[-1]=9;tt11[-1]=9;print(bitcoin777[-1],'closed')
+    if (ss35[-1]==350)and(t1[-1][0]==1)and(ss71[-1]==350):#and((max(bitcoin777[-1-50:])/bitcoin777[-1]<1.003)or(pn17[-1]>bitcoin777[-1]))
+     t1.append((1,1));f1.append((1,1));ss35[-1]=10;ss71[-1]=1351;print(bitcoin777[-1]);pn17.append(bitcoin777[-1]);#closed_cur();
+     tt00[-1]=9;tt11[-1]=9;print(bitcoin777[-1],'closed')
+    if (10<ss35[-1]<350)and(f1[-1][0]==1)and(ss71[-1]<350)and(pn17[-1]/bitcoin777[-1]>1.002):
+     t1.append((1,1));f1.append((1,1));ss35[-1]=900;ss71[-1]=1351;print(bitcoin777[-1]);pn17.append(bitcoin777[-1]);#closed_cur();
+     tt00[-1]=9;tt11[-1]=9;print(bitcoin777[-1],'closed')
+    if (10<ss35[-1]<350)and(t1[-1][0]==1)and(ss71[-1]<350)and(bitcoin777[-1]/pn17[-1]>1.002):
+     t1.append((1,1));f1.append((1,1));ss35[-1]=900;ss71[-1]=1351;print(bitcoin777[-1]);pn17.append(bitcoin777[-1]);#closed_cur();
+     tt00[-1]=9;tt11[-1]=9;print(bitcoin777[-1],'closed')
+    if (tt11[-1]==0):
+     tt11[-1]='no';margn();
+    if (tt00[-1]==7):
+     tt00[-1]='nothing';cl();
+    return 1;
+
+
+    if (tt00[-1]==7):
+     tt00[-1]='nothing';#cl();
+     if (t1[-1][0]==1)and((strftime("%-d", gmtime())!='6')and(strftime("%-d", gmtime())!='50')): 
+      #neworder.append(client.new_order('BTC/USD_LEVERAGE',OrderSide.SELL,OrderType.MARKET,client.get_account_info()["balances"][0]['free']*0.95*10/bi()[0],client.get_account_info()["balances"][0]['accountId'],None,False,None,None,10,None,NewOrderResponseType.FULL,None));
+      #if neworder[-1]['code']==-1021: tt00[-1]=7;
+     elif (f1[-1][0]==1)and((strftime("%-d", gmtime())!='6')and(strftime("%-d", gmtime())!='50')): 
+      #neworder.append(client.new_order('BTC/USD_LEVERAGE',OrderSide.BUY,OrderType.MARKET,client.get_account_info()["balances"][0]['free']*0.95*10/bi()[0],client.get_account_info()["balances"][0]['accountId'],None,False,None,None,10,None,NewOrderResponseType.FULL,None));
+      #if neworder[-1]['code']==-1021: tt00[-1]=7;
+
+newo=[];
+#neworder[-1]['status']=='FILLED'
+#closed_cur()
+
+def closed_cur():
+    try:
+     newo.append(client.close_trading_position(client.list_leverage_trades(None)["positions"][-1]['id'],None));
+    except: rrrr=0;
+
+#client.list_leverage_trades(None)["positions"][-1]['id'];
+
+#######################
+
+
+################################################
+
+ordm=[];
+def cl():
+      if (t1[-1][1]==1):
+       print('sell',bitcoin777[-1]),len(bitcoin777);tt00[-1]=0;tk=0;te=0;
+       try: 
+        info = client7.get_margin_account();
+        for i in range(len(info["userAssets"])):
+         if info["userAssets"][i]['asset']=='BTC': tk=i;
+        for i in range(len(info["userAssets"])):
+         if info["userAssets"][i]['asset']=='USDT': te=i;
+        amount=info["userAssets"][tk];precision = 5;
+        balance1 = "{:0.0{}f}".format(math.floor((float(amount['borrowed']))*100000*1.003)/bit()/100000, precision);
+        ordermargin.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_SELL,type=ORDER_TYPE_MARKET,quantity=balance1));
+       except: rrrr=0;
+       try: 
+        transaction = client7.repay_margin_loan(asset='USDT', amount=client7.get_margin_account()["userAssets"][te]['borrowed']);
+       except: rrrr=0;
+       try: 
+        tt11[-1]=0;
+        transaction = client7.create_margin_loan(asset='BTC', amount=client7.get_max_margin_loan(asset='BTC')['amount']);print(transaction);tt11[-1]='no';
+       except: rrrr=0;
+       info = client7.get_margin_account();amount=info["userAssets"][tk];precision = 5;
+       balance1 = "{:0.0{}f}".format(math.floor((float(amount['free']))*100000*0.993)/100000, precision);
+       ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_SELL,type=ORDER_TYPE_MARKET,quantity=balance1));
+       tt00[-1]='nothing';tt11[-1]=98;
+      elif (f1[-1][1]==1):
+       print('buy',bitcoin777[-1]),len(bitcoin777);tt00[-1]=0;tk=0;te=0;
+       try: 
+        info = client7.get_margin_account();
+        for i in range(len(info["userAssets"])):
+         if info["userAssets"][i]['asset']=='USDT': tk=i;
+        for i in range(len(info["userAssets"])):
+         if info["userAssets"][i]['asset']=='BTC': te=i;
+        amount=info["userAssets"][tk];precision = 5;
+        balance1 = "{:0.0{}f}".format(math.floor((float(amount['borrowed']))*100000*1.003)/100000, precision);
+        ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_BUY,type=ORDER_TYPE_MARKET,quantity=balance1));
+       except: rrrr=0;
+       try: 
+        transaction = client7.repay_margin_loan(asset='BTC', amount=client7.get_margin_account()["userAssets"][te]['borrowed'])
+       except: rrrr=0;
+       try:
+        tt11[-1]=0;
+        transaction = client7.create_margin_loan(asset='USDT', amount=client7.get_max_margin_loan(asset='USDT')['amount']);print(transaction);tt11[-1]='no';
+       except: rrrr=0;
+       info = client7.get_margin_account();amount=info["userAssets"][tk];precision = 5;
+       balance1 = "{:0.0{}f}".format(math.floor((float(amount['free']))*100000*0.993/bit())/100000, precision);
+       ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_BUY,type=ORDER_TYPE_MARKET,quantity=balance1));
+       tt00[-1]='nothing';tt11[-1]=98;
+
+
+
+def margn():
+    if tt11[-1]=='no':
+     if (t1[-1][1]==1):
+      print('sellmarginiso',bitcoin777[-1],len(bitcoin777));tt11[-1]=0;tk=0;
+      transaction = client7.create_margin_loan(asset='BTC', amount=client7.get_max_margin_loan(asset='BTC')['amount']);print(transaction);
+      info = client7.get_margin_account();
+      for i in range(len(info["userAssets"])):
+       if info["userAssets"][i]['asset']=='BTC': tk=i;
+      amount=info["userAssets"][tk];precision = 5;
+      balance1 = "{:0.0{}f}".format(math.floor((float(amount['free']))*100000*0.993)/100000, precision);
+      ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_SELL,type=ORDER_TYPE_MARKET,quantity=balance1));
+      tt11[-1]='no';
+     elif (f1[-1][1]==1):
+      print('buymarginiso',bitcoin777[-1],len(bitcoin777));tt11[-1]=0;tk=0;
+      transaction = client7.create_margin_loan(asset='USDT', amount=client7.get_max_margin_loan(asset='USDT')['amount']);print(transaction);
+      info = client7.get_margin_account();
+      for i in range(len(info["userAssets"])):
+       if info["userAssets"][i]['asset']=='USDT': tk=i;
+      amount=info["userAssets"][tk];precision = 5;
+      balance1 = "{:0.0{}f}".format(math.floor((float(amount['free']))*100000*0.993/bit())/100000, precision);
+      ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_BUY,type=ORDER_TYPE_MARKET,quantity=balance1));
+      tt11[-1]='no';
+
+
+def bit():
+    avg_price = client7.get_avg_price(symbol='BTCUSDT')
+    avg_price=float(avg_price['price'])
+    return avg_price;
+
+#for i in range(len(info["userAssets"])):
+# if (float(info["userAssets"][i]['borrowed']))>0: print(i);
+
+#for i in range(len(info["userAssets"])):
+# if (float(info["userAssets"][i]['free']))>0: print(i);
+
+#for i in range(len(info["userAssets"])):
+# if info["userAssets"][i]['asset']=='USDT': print(i);
+#56-usdt
+#19-btc
+
+#for i in range(len(info["userAssets"])): 
+# if info["userAssets"][i]['asset']=='BTC': tk=i;
+
+#balance1 = "{:0.0{}f}".format(math.floor((float(amount['free']))*100000*1*0.99)/bit()/100000, precision);
+#ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_BUY,type=ORDER_TYPE_MARKET,quantity=balance1));
+
+def closed():
+      if (f1[-1][1]==1):
+       print('sell_close',bitcoin777[-1]);tt00[-1]=0;tk=0;
+       try: 
+        info = client7.get_margin_account();
+        for i in range(len(info["userAssets"])):
+         if info["userAssets"][i]['asset']=='USDT': tk=i;
+        amount=info["userAssets"][tk];precision = 5;
+        balance1 = "{:0.0{}f}".format(math.floor((float(amount['borrowed']))*100000*1.003)/bit()/100000, precision);
+        ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_SELL,type=ORDER_TYPE_MARKET,quantity=balance1));
+       except: rrrr=0;
+       try: 
+        transaction = client7.repay_margin_loan(asset='USDT', amount=client7.get_margin_account()["userAssets"][tk]['borrowed']);
+       except: rrrr=0;
+      elif (t1[-1][1]==1):
+       print('buy_close',bitcoin777[-1]);tt00[-1]=0;tk=0;
+       try: 
+        info = client7.get_margin_account();
+        for i in range(len(info["userAssets"])):
+         if info["userAssets"][i]['asset']=='BTC': tk=i;
+        amount=info["userAssets"][tk];precision = 5;
+        balance1 = "{:0.0{}f}".format(math.floor((float(amount['borrowed']))*100000*1.003)/100000, precision);
+        ordm.append(client7.create_margin_order(symbol='BTCUSDT',side=SIDE_BUY,type=ORDER_TYPE_MARKET,quantity=balance1));
+       except: rrrr=0;
+       try: 
+        transaction = client7.repay_margin_loan(asset='BTC', amount=client7.get_margin_account()["userAssets"][tk]['borrowed'])
+       except: rrrr=0;
+
+

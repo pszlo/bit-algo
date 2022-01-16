@@ -1,0 +1,50 @@
+t1=[(1,1)];f1=[(0,1)];f1.append(f1[-1]);t1.append(t1[-1]);v40=0;act=1.002;a=0;v3=0;v8=0;v9=0;v11=0;v4=0;
+v71=0;v70=0;sum12=3000;v50=0;v44=0;v40=0;price14=bitcoin[-a][1];price15=bitcoin[-a][1];price12=bitcoin[-a][1]
+
+import pickle
+#file = open('/Users/andrejeremcuk/bitcoin.pkl', 'rb')
+#bitcoin=pickle.load(file)
+
+
+def bil(): 
+    global bitcoin,fff1,ttt1,v71,v70,sum12,price12,v50,v44,v40,v4,price14,price13,price15,act,v3,v8,v9,v11,v96;
+    a=len(bitcoin)-391;sum12=3000;price12=bitcoin[0][1];t1=[(0,1)];f1=[(1,1)];f1.append(f1[-1]);t1.append(t1[-1]);
+    price12=bitcoin[-a][1];price13=price12;print(sum12);t1.append((1,1));f1.append((0,0));print(bitcoin[-a][1],a,'sell26',v3,sum12);fff1=0;ttt1=1;v44+=1;ar7=400;price15=price13;ar33=1.33;pr2=bitcoin[-a];v10=0;v67=0;act=1.002;v5=0;
+    for i in range(len(bitcoin)-482):#len(bitcoin)-382-0000
+     a=a-1;
+     poi=34;fas=36;at1=175;at2=350;at3=50;pat=385;ar3=3000;ar2=1.33;ar7=500;ar33=1;
+     if (a>0): #z
+      v3=v3+1;v70+=1;v71+=1;
+      if ((bitcoin[-a][1]/(bitcoin[-a-at1][1])>1.013)or(bitcoin[-a][1]/bitcoin[-a-at2][1]>1.01)or(bitcoin[-a][1]/bitcoin[-a-at3][1]>1.006))and(t1[-1][0]==1)and(v3>450):
+       if (bitcoin[-a][1]/bitcoin[-a-at3][1]>1.006): v5+=1;
+       price12=bitcoin[-a][1];price13=bitcoin[-a][1];t1.append((0,0));f1.append((1,1));v71=0;v3=0;print(bitcoin[-a],'up',v3,a);
+      if (((bitcoin[-a-at1][1])/bitcoin[-a][1]>1.013)or(bitcoin[-a-at2][1]/bitcoin[-a][1]>1.01)or(bitcoin[-a-at3][1]/bitcoin[-a][1]>1.006))and(f1[-1][0]==1)and(v3>450):
+       if (bitcoin[-a-at3][1]/bitcoin[-a][1]>1.006): v5+=1;
+       price12=bitcoin[-a][1];price13=bitcoin[-a][1];t1.append((1,1));f1.append((0,0));v71=0;v3=0;print(bitcoin[-a],'down',v3,a);
+      if (v3==350)and(f1[-1][0]==1)and(v71==350):#and((bitc[-a]/min(bitc[-a-50:-a])<1.003)or(price12<bitcoin[-a][1]))
+       sum12+=sum12*(bitcoin[-a][1]-price12)/bitcoin[-a][1];v44+=1;#sum12*=0.9995
+       price15=price12;price12=bitcoin[-a][1];t1.append((1,1));f1.append((1,1));v3=0;v71=1351;print(sum12,a,bitcoin[-a]);
+       if price12/price15>1.01: print(sum12,bitcoin[-a],price15,'up');v4+=1;
+      if ((v3==350)and(t1[-1][0]==1)and(v71==350))or((v3<-350)and(t1[-1][0]==1)and(100<v71<350)and(price12/price13>1.1)):#and((max(bitc[-a-50:-a])/bitc[-a]<1.003)or(price12>bitcoin[-a][1]))
+       sum12+=sum12*(-bitcoin[-a][1]+price12)/bitcoin[-a][1];v44+=1;#sum12*=0.9995
+       price15=price12;price12=bitcoin[-a][1];t1.append((1,1));f1.append((1,1));v3=0;v71=1351;print(sum12,a,bitcoin[-a]);
+       if price15/price12>1.01: print(sum12,bitcoin[-a],price15,'down');v4+=1;
+      if (10<v3<350)and(f1[-1][0]==1)and(v71<350)and(price12/bitcoin[-a][1]>act):
+       sum12+=sum12*(bitcoin[-a][1]-price12)/bitcoin[-a][1];v44+=1;v40+=1;#sum12*=0.9995
+       price15=price12;price12=bitcoin[-a][1];t1.append((1,1));f1.append((1,1));v71=1351;print(sum12,bitcoin[-a],a,act);
+       v3=900;
+       #if price12/price15<0.98: print(sum12,bitcoin[-a],price15,'up');
+      if (10<v3<350)and(t1[-1][0]==1)and(v71<350)and(bitcoin[-a][1]/price12>act):
+       sum12+=sum12*(-bitcoin[-a][1]+price12)/bitcoin[-a][1];v44+=1;v40+=1;#sum12*=0.9995
+       price15=price12;price12=bitcoin[-a][1];t1.append((1,1));f1.append((1,1));v71=1351;print(sum12,bitcoin[-a],a,act);
+       v3=900;
+       #if price15/price12<0.98: print(sum12,bitcoin[-a],price15,'down');
+      if (bitcoin[-a][1]<price13)and(t1[-1][0]==1)and(v71<350): 
+       price13=bitcoin[-a][1];
+       #if price12/price13>1.003: act=0.998;print(price13,price12,a,act);
+       #if price12/price13>1.007: act=0.996;print(price13,price12,a,act);
+      if (bitcoin[-a][1]>price13)and(f1[-1][0]==1)and(v71<350): 
+       price13=bitcoin[-a][1];
+       #if price13/price12>1.003: act=0.998;print(price13,price12,a,act);
+       #if price13/price12>1.007: act=0.996;print(price13,price12,a,act);
+    return a,sum12;
